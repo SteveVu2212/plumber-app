@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const apiUrl = 'http://206.81.14.205:80';
+      const apiUrl = 'https://reasonapi.world';
       const endpoint = '/predict_petal_length';
       const url = `${apiUrl}${endpoint}?petal_width=${petalWidth}`;
       const response = await axios.get(url);
